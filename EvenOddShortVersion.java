@@ -8,6 +8,7 @@ public class EvenOddShortVersion {
 
         int n = Integer.parseInt(reader.readLine());
 
+        //Ternary Operator
         String evenOdd = (n % 2 == 0) ? "even":"odd";
         String positiveNegative = (n > 0) ? "positive":"negative";
 
