@@ -1,4 +1,3 @@
-package com.javarush.task.task07.task0711;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -23,9 +22,12 @@ public class RepeatDeleteAdding {
         }
 
         for (int i = 0; i < 13; i++) {
-            String temporally = list.get(list.size()-1);
-            list.remove(list.size() - 1);
-            list.add(0, temporally);
+            //String temporally = list.get(list.size()-1);
+            //list.remove(list.size() - 1);
+            //list.add(0, temporally);
+            list.add(0, list.get(list.size()-1));
+            list.remove(list.size()-1);
+
         }
 
         for (String counter : list) {
